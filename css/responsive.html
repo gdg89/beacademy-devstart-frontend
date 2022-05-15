@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividades</title>
+    <style>
+        .container{
+            width: 400px;
+            height: auto;
+            padding: 1rem;
+            background: blueviolet;
+            margin-top: 0.7rem;
+        }
+
+        .tex-box h2{
+            color:azure;
+            font-size: 1.5rem;
+
+        }
+        .tex-box p{
+            color:orangered;
+            font-size: 1.5rem;
+
+        }
+
+
+        @media (min-width: 575px) {
+            .container{
+                background: blue;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container{
+                width:40.6rem;
+                background: green;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tex-box">
+            <h2>Caixa de texto 1</h2>
+            <p>ALguma coisa</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tex-box">
+            <h2>Caixa de texto 2</h2>
+            <p>alguma outra coisa</p>
+        </div>
+    </div>
+</body>
+</html>

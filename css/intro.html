@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo CSS</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div>
+        <h1 id="super-title">Testando Especificidade</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio omnis ipsum quo! Pariatur, minima similique labore illum sapiente autem. Culpa cum tenetur aliquid voluptate distinctio soluta esse doloribus suscipit!</p>
+
+        <h1 class="my-title-2">Testando Especificidade</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio omnis ipsum quo! Pariatur, minima similique labore illum sapiente autem. Culpa cum tenetur aliquid voluptate distinctio soluta esse doloribus suscipit!</p>
+    </div>
+
+    <div style="background-color:black; color: white; padding:20px;">
+        <h2>AT-rules</h2>
+        <p>Sao regras realacionadas ao comportamento do CSS, começa com um sinal de<span>@ seguido  do identificador e do valor</span> . 
+        </p>
+        <h3>São os siguientes:</h3>
+        <ul>
+            <li>@import: serve para incluir um css externo. <br>
+                ex: @import url("http:linkexterno.com.uy/style.css")
+
+            </li>
+
+            <li>@media: são regras condicionais para varios dispositivos. <br>
+                @media (min-width:365px){
+
+                }
+            </li>
+            <li>
+                <p>
+                    @font-face: é para colocar fontes externas. <br>
+                @font-face{
+
+                }
+                </p>
+            </li>
+            <li>@keyframes: serve para as animations do css. <br>
+                @keyframes animationName{
+
+                }
+            </li>
+            
+        </ul>
+    </div>
+
+</body>
+</html>

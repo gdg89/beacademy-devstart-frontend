@@ -1,0 +1,51 @@
+/*Folha de estilos css*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+h1{
+    color:red;
+    font-size: 35px;
+    background: rgb(242, 242, 10);
+    border: 2px solid red;
+    margin: 10px;
+    padding: 30px;
+    font-family:"Kumbh Sans";
+    
+}
+
+p{
+    background:orange;
+    color: black;
+}
+
+#super-title{
+    background:blueviolet;
+    color: black;
+}
+.my-title-2{
+    background: green;
+    color: yellow;
+}
+ul li{
+    margin:10px;
+    
+}
+
+/*testando combinator*/
+div ul li p{
+    background: pink;
+    color: blue;
+}
+
+/* CHILD COMBINATOR
+> :seleciona somente o elemento filio dentro do pai.
+ ex: div > a {}
+    
+*/
+/*ADJACENT SIBLING COMBINATOR
+  - Identificado  pelo sinal de +(altera o elemento mais proximo) e ~ (altera tudos os elementos irmaos mais proximos) entre dois seletores.
+  - Busca somente o elemento do ldo direto que é imão direto da herarquia
+
+*/
+
+p + span {
+    color:red;
+}
