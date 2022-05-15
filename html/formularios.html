@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- 
+        block content
+        *action: o que acontece com o botão de enviar
+
+        *method: 
+        -post(para resever dados)
+        -get (buscar algo)*  method padrão
+     -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset name="contato">
+            <legend>Preencha o formulario de contato</legend>
+        </fieldset>
+
+        <!-- Label
+            
+            *Asociar e idrntificar um ou mais tags de entrada de dados
+
+            *ajuda na acessibilidade
+
+            atributos:
+                -for: usado para realizar a coneção com outros elements do formulario
+
+         -->
+         <label for="nome">Nome: </label>
+         <input type="text" name="" id="nome"><br>
+
+         <label >
+             Idade:
+             <input type="text" name="" id="idade">
+        </label><br>
+
+
+
+        <!-- DATALIST
+            *<datalist>: lista de valores com sugetões para algum elemento input. 
+
+            *Usuario podera selecionar o colocar novos valores    
+        -->
+        <!-- lista coisas -->
+        <label for="">
+            Cosas:
+            <datalist id="thingsList">
+                <option >carro</option>
+                <option >cadera</option>
+                <option >mesa</option>
+            </datalist>
+            <input type="text" list="thingsList">
+        </label>
+
+        <!-- inputs -->
+        <fieldset>
+            <legend>Inputs</legend>
+
+            <!-- input text -->
+            <input 
+            type="text"
+            placeholder="escreba alguma coisa" 
+            size="40"
+            minlength="3"
+            max="12"
+            title="maximo 12 caracteres"
+            required
+            ><br>
+
+            <!-- input number -->
+            <input 
+            type="number"
+            placeholder="escreba numero" 
+            size="40"
+            minlength="3"
+            max="12"
+            title="maximo 12 caracteres"
+            required
+            >
+            <!-- input email -->
+            <input 
+            type="email"
+            placeholder="escreba email" 
+            size="40"
+            minlength="3"
+            max="12"
+            title="maximo 12 caracteres"
+            required
+            >
+            <!-- input password-->
+            <input 
+            type="password"
+            placeholder="Password" 
+            size="40"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            inputmode="numeric"
+            ><!--pattern: expressões regulares--> <br>
+
+            <!-- input hidden -->
+            <input type="hidden" value="Eu estou escondido"> 
+            
+            <!-- input color -->
+            <input type="color"><br>
+
+            <!-- input date -->
+            <input type="date"><br>
+            <input type="week"><br>
+            <input type="time"><br>
+            
+            <!-- input checkbox -->
+            <label for="area">
+                qual é sua area de interesse?
+            </label>
+            <div id="area">
+                <input type="checkbox" value="Front-End" name="interesse" id="frontend">
+                <label for="frontend">Front-End</label><br>
+
+                <input type="checkbox" value="Back-End" name="interesse" id="backend">
+                <label for="backend">Back-End </label><br>
+
+                <input type="checkbox" value="Design UI/UX" name="interesse" id="ux-design"> 
+                <label for="ux-design">Design UI/UX</label><br>
+             </div>
+             <!-- interese= Front-End, Back-End, ....  -->
+
+
+
+             <!-- Input Radio  -->
+             <h3>Deseja rceber notificação da be.academy</h3>
+             <label for="yes">Sim</label>
+             <input type="radio" id="yes" name="notidabe" value="yes">
+
+             <label for="no">Não</label>
+             <input type="radio" id="no" name="notidabe" value="no">
+             <!-- notification = checkValue -->
+           
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend >aslkadj</legend>
+            <!-- SELECT -->
+            <label for="teacher">
+                <select name="select-teacher" id="teacher" size="3">
+                    <option value="">Selecione um professor</option>
+                    <option value="Juan">Juan</option>
+                    <option value="Eduardo">Eduardo</option>
+                    <option value="Raquel">Raquel</option>
+                </select> 
+                <!-- select-teacher: [Juan, Eduardo, ....] -->
+             </label><br>
+
+             <!-- SEARCH -->
+             <label for="">
+                 <input type="search" placeholder="Busque algo">
+
+             </label> <br>
+
+
+             <!-- file -->
+             <input type="file" accept="image/*" multiple> <br>
+
+
+             <!-- Text area -->
+             <textarea name="" id="" cols="30" rows="10">Deixe um comentario....</textarea> <br>
+
+             <!-- optgroup -->
+
+             <label for="">Escolha seu professor</label> <br>
+             <select name="prof" id="" size="5">
+                 <optgroup label="Professores">
+                     <option value="luan">Luan</option>
+                     <option value="regis">Regis</option>
+                     <option value="maria">Maria</option>
+                     <option value="ana">Ana</option>
+                     <option value="lucas">Lucas</option>
+                 </optgroup>
+                 <optgroup label="Things">
+                     <option value="carro">carro</option>
+                     <option value="manga">manga</option>
+                     <option value="cadeira">cadeira</option>
+                     <option value="mortadela">mortadela</option>
+                 </optgroup>
+             </select>
+        </fieldset>
+
+
+
+        <!-- button -->
+        <!-- 
+            *submit: envia as infomações
+            *reset: limpa os campos
+            *button
+         -->
+        <button type="submit" name="" class="" id="" >
+            Enviar
+        </button>
+
+
+    </form>
+    
+</body>
+</html>
