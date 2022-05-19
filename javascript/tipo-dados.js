@@ -5,7 +5,17 @@
     em 
     bloco 
     */
+  /*  Tipo String
 
+    * Cadeias de caracteres *
+
+    - REGRAS:
+
+    ""  // aspas duplas
+    '' // aspas simples
+    `` // template literals ou template strings (crase)
+
+    ---*/
     //TIPO STRING
 console.log('Olha eu no "aspas" simples!!')// Simples entre duplas/ duplas entre simples.
 
